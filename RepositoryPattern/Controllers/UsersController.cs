@@ -53,16 +53,14 @@ namespace RepositoryPattern.Controllers
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
 
-                return Ok(await _context.Users.ToListAsync());
+                //return Ok(await _context.Users.ToListAsync());
             }
-
-            return new JsonResult("Something went wrong") { StatusCode = 500 };
+            return Ok(await _context.Users.ToListAsync());
+            //return new JsonResult("Something went wrong") { StatusCode = 500 };
         }
 
-
-
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, User request)
+        public async Task<IActionResult> Update(User request)
         {
             var item = await _context.Users.FindAsync(request.Id);
             if (item == null)
