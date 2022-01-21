@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Core.IRepositories
 {
-    interface IAuthorRepository : IGenericRepository<Author>
+    interface IProductRepository : IGenericRepository<Product>
     {
         public Task<bool> Add(User entity)
         {

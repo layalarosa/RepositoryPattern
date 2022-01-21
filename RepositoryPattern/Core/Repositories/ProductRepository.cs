@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Core.Repositories
 {
-    public class BookRepository : GenericRepository<Book>
+    public class ProductRepository : GenericRepository<Product>
     {
-        public BookRepository(
+        public ProductRepository(
             ApplicationDbContext context,
             ILogger logger
         ) : base(context, logger)
