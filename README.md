@@ -1,2 +1,2 @@
 # RepositoryPattern
-Repository Pattern in .Net Core 5 Proyecto de Prueba.
+Repository Pattern in .Net Core 5.0.1 Proyecto de Prueba.
