@@ -8,12 +8,12 @@ namespace RepositoryPattern.Core.IRepositories
 {
     interface IProductRepository : IGenericRepository<Product>
     {
-        public Task<bool> Add(User entity)
+        public Task<bool> Add(Product entity)
         {
             throw new NotImplementedException();
         }
 
-        public new Task<IEnumerable<User>> All()
+        public new Task<IEnumerable<Product>> All()
         {
             throw new NotImplementedException();
         }
@@ -23,12 +23,12 @@ namespace RepositoryPattern.Core.IRepositories
             throw new NotImplementedException();
         }
 
-        public new Task<User> GetById(int id)
+        public new Task<Product> GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> Update(User entity)
+        public Task<bool> Update(Product entity)
         {
             throw new NotImplementedException();
         }

@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProductController : Controller
     {
         private readonly ILogger<ProductController> _logger;
