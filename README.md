@@ -1,6 +1,8 @@
 # RepositoryPattern
 Repository Pattern in .Net Core 5.0.1 Proyecto de Prueba.
 
+The Web API can be texted in swagger.
+
 The repository pattern in .NET Core
 Entity Framework Core already serves as the unit of work.
 
